@@ -19,7 +19,6 @@ getMatches = _ => {
   preloader.removeAttribute("hidden");
   if ('caches' in window) {
     caches.match(base_url + "competitions/2021/teams").then(res => {
-      console.log("getMatches dari cache");
       if (res) {
         res.json().then(data => {
           data.teams.forEach(team => {
@@ -115,7 +114,6 @@ getMatches = _ => {
       document.getElementById("matches").innerHTML = champLeagueHTML;
     }).catch(error);
   }).catch(error);
-  console.log(teams);
 }
 
 getTeams = () => {
