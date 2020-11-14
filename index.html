@@ -12,6 +12,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="/images/icons/icon-192x192.png">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -36,17 +37,7 @@
 	<script src="js/idb.js"></script>
 	<script src="js/db.js"></script>
 	<script src="js/api.js"></script>
-	<script>
-		if ("serviceWorker" in navigator) {
-			window.addEventListener("load", () => {
-				navigator.serviceWorker.register("service-worker.js")
-					.then(() => console.log("Pendaftaran Service Worker Berhasil"))
-					.catch(() => console.error("Service Worker gagal didaftarkan"));
-			});
-		} else {
-			console.error("Browser ini tidak mendukung service worker.");
-		}
-	</script>
+	<script src="js/validate.js"></script>
 	<script src="js/notify.js"></script>
 </body>
 

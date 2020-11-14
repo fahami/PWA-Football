@@ -211,7 +211,7 @@ getTeamById = () => {
                     </tr>`;
                 });
                 preloader.setAttribute("hidden", "");
-                document.getElementById("body-content").innerHTML += playerHTML + "</tbody></table>";
+                document.getElementById("body-content").innerHTML += `${playerHTML}</tbody></table>`;
                 resolve(player);
               })
           }
@@ -264,7 +264,7 @@ getTeamById = () => {
             </tr>`;
         });
         preloader.setAttribute("hidden", "");
-        document.getElementById("body-content").innerHTML += playerHTML + "</tbody></table>";
+        document.getElementById("body-content").innerHTML += `${playerHTML}</tbody></table>`;
         resolve(player);
       })
   })
@@ -292,7 +292,7 @@ getSavedTeams = () => {
       </div>`;
     })
     preloader.setAttribute("hidden", "");
-    document.getElementById("saved").innerHTML = savedTeams + "</div>";
+    document.getElementById("saved").innerHTML = `${savedTeams}</div>`;
   })
 }
 
@@ -342,7 +342,7 @@ getSavedTeamById = () => {
           </tr>`;
     })
     preloader.setAttribute("hidden", "");
-    document.getElementById("body-content").innerHTML += playerHTML + "</tbody></table>";
+    document.getElementById("body-content").innerHTML += `${playerHTML}</tbody></table>`;
   })
 }
 

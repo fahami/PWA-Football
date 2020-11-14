@@ -1,0 +1,16 @@
+.club-logo {
+	max-height: 12em;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 1em;
+}
+.card-panel,
+.card-content {
+	padding: 16px;
+}
+h6.flow-text {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

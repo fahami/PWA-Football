@@ -94,7 +94,7 @@ self.addEventListener('push', e => {
     } else {
         body = 'Push message no payload';
     }
-    var options = {
+    const options = {
         body: body,
         icon: 'img/maskable_icon.png',
         vibrate: [100, 50, 100],

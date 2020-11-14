@@ -9,9 +9,9 @@ if ("serviceWorker" in navigator) {
     console.error("Browser ini tidak mendukung service worker.");
 }
 document.addEventListener("DOMContentLoaded", () => {
-    var urlParams = new URLSearchParams(window.location.search);
-    var isFromSaved = urlParams.get("saved");
-    var save = document.getElementById("save");
+    const urlParams = new URLSearchParams(window.location.search);
+    const isFromSaved = urlParams.get("saved");
+    const save = document.getElementById("save");
     if (isFromSaved) {
         save.style.display = "none";
         getSavedTeamById();
