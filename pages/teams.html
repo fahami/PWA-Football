@@ -1,0 +1,34 @@
+<style>
+	h6.flow-text {
+		white-space: nowrap;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.club-logo {
+		max-height: 12em;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 1em;
+	}
+
+	.card-panel,
+	.card-content {
+		padding: 16px;
+	}
+</style>
+<h1 class="align-center">Subscribe to Team</h1>
+<select id="clubId" class="icons"></select>
+<button class="btn green btn-small" onclick="insertTeam()"><i class="material-icons right">bookmark</i>Save</button>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Founded</th>
+			<th>Venue</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody id="subscriptions"></tbody>
+</table>
